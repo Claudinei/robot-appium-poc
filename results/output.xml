@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-10-08T12:46:12.147487" rpa="false" schemaversion="5">
+<suite id="s1" name="Android Test" source="/Users/claudineibonilha/projects/qa/robot-appium-poc/tests/android_test.robot">
+<test id="s1-t1" name="Test App Launch" line="9">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-10-08T12:46:12.442602" elapsed="25.503705"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-08T12:46:42.948088" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-08T12:46:37.946734" elapsed="5.001584"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-10-08T12:46:42.948792" elapsed="1.146536"/>
+</kw>
+<doc>Verifica se o aplicativo abre corretamente</doc>
+<status status="PASS" start="2024-10-08T12:46:12.441597" elapsed="31.654388"/>
+</test>
+<status status="PASS" start="2024-10-08T12:46:12.149092" elapsed="31.948290"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Android Test">Android Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
