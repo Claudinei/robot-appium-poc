@@ -1,6 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
-Resource   resources/android/capabilities.robot  # Carrega as capabilities do arquivo capabilities.robot
+Resource   ../resources/android/capabilities.robot  # Carrega as capabilities do arquivo capabilities.robot
 
 *** Variables ***
 ${URL}   http://localhost:4723
