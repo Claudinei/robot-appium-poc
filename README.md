@@ -16,4 +16,4 @@
 - robot -v BROWSER:firefox -d results nome-arquivo-teste.robot
 
 
-robot -t "Test App Launch" -d results nome-arquivo-teste.robot
+robot -t "Test App Launch" -d results tests/android_test.robot
