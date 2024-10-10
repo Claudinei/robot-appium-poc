@@ -1,14 +1,17 @@
 *** Settings ***
-Library    AppiumLibrary
-Resource   ../resources/android/capabilities.robot  # Carrega as capabilities do arquivo capabilities.robot
+Resource   ../resources/config.robot
+Resource    ../steps/home_steps.robot
 
 *** Variables ***
 ${URL}   http://localhost:4723
 
 *** Test Cases ***
+
 Test App Launch
     [Documentation]    Verifica se o aplicativo abre corretamente
-    Open Application   ${URL}   platformName=${PLATFORM_NAME}   deviceName=${DEVICE_NAME}   app=${APP_PATH}   automationName=${AUTOMATION_NAME}
-    Sleep    5s
+    Abrir app android
+    Navegando entre labels
+    Sleep    3s
     #Page Should Contain Element   xpath=//android.widget.TextView[@text='Bem-vindo']  # Ajuste conforme seu app
+    
     Close Application
