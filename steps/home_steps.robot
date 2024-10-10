@@ -9,3 +9,4 @@ Navegando entre labels
     Voltar a pagina
     Clicar na label seu barriga nativo
     Voltar a pagina
+    Sleep    3s

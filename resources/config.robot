@@ -10,3 +10,8 @@ ${URL}   http://localhost:4723
 
 Abrir app android
     Open Application   ${URL}   platformName=${PLATFORM_NAME}   deviceName=${DEVICE_NAME}   app=${APP_PATH}   automationName=${AUTOMATION_NAME}
+
+
+Fechar o app
+    Capture Page Screenshot
+    Close Application
