@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-10-08T14:47:22.015485" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-10-10T08:05:01.300381" rpa="false" schemaversion="5">
 <suite id="s1" name="Android Test" source="/Users/claudineibonilha/projects/qa/robot-appium-poc/tests/android_test.robot">
-<test id="s1-t1" name="Test App Launch" line="9">
+<test id="s1-t1" name="Test App Launch" line="10">
+<kw name="Abrir app android" owner="config">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${URL}</arg>
 <arg>platformName=${PLATFORM_NAME}</arg>
@@ -15,22 +16,86 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-10-08T14:47:22.442782" elapsed="31.426539"/>
+<status status="PASS" start="2024-10-10T08:05:01.676281" elapsed="16.105356"/>
 </kw>
+<status status="PASS" start="2024-10-10T08:05:01.675384" elapsed="16.106478"/>
+</kw>
+<kw name="Navegando entre labels" owner="home_steps">
+<kw name="Clicar na label formulario" owner="home_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-10T08:05:21.082209" level="INFO">xpath criteria: //android.widget.TextView[@text='Formulário']
+xpath criteria: //android.widget.TextView[@text='Formulário']</msg>
+<arg>locator=${LABEL_FORMULARO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-10T08:05:17.783233" elapsed="3.299092"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-10T08:05:21.083945" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Formulário']'.</msg>
+<msg time="2024-10-10T08:05:21.327298" level="INFO">xpath criteria: //android.widget.TextView[@text='Formulário']</msg>
+<arg>${LABEL_FORMULARO}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-10T08:05:21.082515" elapsed="0.244966"/>
+</kw>
+<status status="PASS" start="2024-10-10T08:05:17.782911" elapsed="3.544783"/>
+</kw>
+<kw name="Voltar a pagina" owner="home_page">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-08T14:47:58.883032" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-10T08:05:26.330238" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-08T14:47:53.876483" elapsed="5.006909"/>
+<status status="PASS" start="2024-10-10T08:05:21.328608" elapsed="5.001819"/>
+</kw>
+<kw name="Go Back" owner="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" start="2024-10-10T08:05:26.330753" elapsed="0.113328"/>
+</kw>
+<status status="PASS" start="2024-10-10T08:05:21.327994" elapsed="5.116200"/>
+</kw>
+<kw name="Clicar na label seu barriga nativo" owner="home_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-10T08:05:27.167303" level="INFO">xpath criteria: //android.widget.TextView[@text='SeuBarriga Nativo']</msg>
+<arg>locator=${LABEL_SEUBARRIGA_NATIVO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-10T08:05:26.444728" elapsed="0.722658"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-10T08:05:27.169208" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SeuBarriga Nativo']'.</msg>
+<msg time="2024-10-10T08:05:27.381886" level="INFO">xpath criteria: //android.widget.TextView[@text='SeuBarriga Nativo']</msg>
+<arg>${LABEL_SEUBARRIGA_NATIVO}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-10T08:05:27.167609" elapsed="0.214414"/>
+</kw>
+<status status="PASS" start="2024-10-10T08:05:26.444403" elapsed="0.937790"/>
+</kw>
+<kw name="Voltar a pagina" owner="home_page">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-10T08:05:32.383708" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-10T08:05:27.382873" elapsed="5.001073"/>
+</kw>
+<kw name="Go Back" owner="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" start="2024-10-10T08:05:32.384433" elapsed="0.108822"/>
+</kw>
+<status status="PASS" start="2024-10-10T08:05:27.382527" elapsed="5.110841"/>
+</kw>
+<status status="PASS" start="2024-10-10T08:05:17.782475" elapsed="14.710960"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-10T08:05:35.495542" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-10T08:05:32.493753" elapsed="3.001980"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-10-08T14:47:58.884337" elapsed="1.572288"/>
+<status status="PASS" start="2024-10-10T08:05:35.496849" elapsed="1.104985"/>
 </kw>
 <doc>Verifica se o aplicativo abre corretamente</doc>
-<status status="PASS" start="2024-10-08T14:47:22.441733" elapsed="38.015934"/>
+<status status="PASS" start="2024-10-10T08:05:01.674443" elapsed="34.927912"/>
 </test>
-<status status="PASS" start="2024-10-08T14:47:22.017720" elapsed="38.443252"/>
+<status status="PASS" start="2024-10-10T08:05:01.303553" elapsed="35.299692"/>
 </suite>
 <statistics>
 <total>
