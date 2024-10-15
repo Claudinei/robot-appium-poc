@@ -11,5 +11,7 @@ ${URL}   http://localhost:4723
 
 Test App Launch
     [Documentation]    Verifica se o aplicativo abre corretamente
-
     Navegando entre labels
+
+Preencher campos do formulario
+    Preencher formulario
