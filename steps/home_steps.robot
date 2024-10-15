@@ -10,3 +10,7 @@ Navegando entre labels
     Clicar na label seu barriga nativo
     Voltar a pagina
     Sleep    3s
+
+Preencher formulario
+    Clicar na label formulario
+    Preencher campo nome
