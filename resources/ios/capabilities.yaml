@@ -1,6 +1,6 @@
 AppiumLibrary.Capabilities:
   platformName: "iOS"
-  platformVersion: "14.0"  # Versão do iOS
+  platformVersion: "14.0" 
   deviceName: "iPhone Simulator"
   app: "/absolute/path/to/your_application.ipa"
   automationName: "XCUITest"
