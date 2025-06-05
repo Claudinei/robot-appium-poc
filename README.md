@@ -1,6 +1,9 @@
 ### Robot Fremework e Appium 08/10/2024
 
 #### Ambiente
+Baixe e instale o Python
+
+Para criar o ambiente:
 python -m venv nome_do_ambiente 
 
 - Para ativar no windows 
@@ -8,6 +11,9 @@ nome_do_ambiente\Scripts\activate
 
 - Para ativar no Linox e MacOs 
 source nome_do_ambiente/bin/activate 
+
+- Pressione Ctrl+Shift+P (ou F1) para abrir a paleta de comandos
+- Digite e selecione: Python: Select Interpreter
 
 #### Instalações 
 - pip install robotframework
