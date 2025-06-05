@@ -3,7 +3,7 @@ Library    AppiumLibrary
 Resource   ../resources/ios/capabilities.yaml
 
 *** Variables ***
-${URL}   http://localhost:4723/wd/hub
+${URL}   http://localhost:4723
 
 *** Test Cases ***
 Test App Launch
